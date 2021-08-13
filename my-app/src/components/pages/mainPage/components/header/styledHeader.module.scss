@@ -1,0 +1,22 @@
+.wrapper_header{
+    width: 100%;
+    background:url(../../../../../images/mainPage_images/headerImages/headerImage.jpg) no-repeat center top /cover;
+    
+    color:white;
+    padding:35px 0px;
+    padding-bottom:229px;
+    .content_header{
+        margin-top: 427px;
+        padding:0px 70px;
+        h2{
+            font-size:24px;
+            font-weight: 400;
+        }
+        h1{
+            font-size:70px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+    }
+}
