@@ -1,0 +1,45 @@
+.wrapper_cotegory {
+    margin-bottom:170px;
+    position: relative;
+    h2 {
+        margin-left: 70px;
+        margin-bottom: 45px;
+    }
+        
+    a {
+        text-decoration: none;
+        color:black;
+    }
+    .arrow_left,.arrow_right {
+        position: absolute;
+        font-size: 60px;
+        color: black;
+        top: 55%;
+        z-index: 30000;
+        cursor: pointer;
+        
+    }
+    .arrow_left {
+        left:150px;
+    }
+    .arrow_right {
+        right:150px;
+    }
+    .slider_cotegory {
+        padding:0px 60px;
+        height:319px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .slide {
+            opacity: 0;
+            transition-duration: 3s ease;
+
+        }     
+        .slide_active {
+            opacity: 1;
+            transition-duration: 3s;
+            
+        }
+    }
+}
