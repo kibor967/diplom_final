@@ -1,10 +1,10 @@
 import styles from './styledContent.module.scss';
-import { Category } from './componentsContent/Category';
-import { SelectProduct } from './componentsContent//SelectedProducts';
-import { CompanyDescription } from './componentsContent/CompanyDescription';
-import { FeaturesStreetster } from './componentsContent/FeaturesStreetster';
-import { News } from './componentsContent/News';
-import { Subscription } from './componentsContent/Subscription';
+import { Category } from './components/Category';
+import { SelectProduct } from './components//SelectedProducts';
+import { CompanyDescription } from './components/CompanyDescription';
+import { FeaturesStreetster } from './components/FeaturesStreetster';
+import { News } from './components/News';
+import { Subscription } from './components/Subscription';
 
 export function Content() {
 	return (

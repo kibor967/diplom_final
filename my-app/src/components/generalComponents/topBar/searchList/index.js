@@ -2,9 +2,9 @@ import styles from './styledSearchItem.module.scss';
 import { useSelector } from 'react-redux';
 
 export function SearchList() {
-	const serachItemsList = useSelector(state => state.searchItems);
+	const searchItemsList = useSelector(state => state.searchItems);
 
-	const list = serachItemsList.map((item, index) => {
+	const list = searchItemsList.map((item, index) => {
 		return (
 			<div key={index} className={styles.item_search}>
 				<div className={styles.img_search}>

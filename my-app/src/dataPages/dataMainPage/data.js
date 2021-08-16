@@ -12,26 +12,29 @@ import offroad from '../../images/mainPage_images/contentImages/section_category
 
 export const dataMainPage = {
 	dataProduct: [
-		{ img: helmet, text: 'Защита Canyon' },
-		{ img: bottle, text: 'Шлем Octane' },
-		{ img: helmet, text: 'Защита Canyon' },
-		{ img: bottle, text: 'Шлем Octane' },
+		{ img: helmet, text: 'Защита Canyon', id: 1 },
+		{ img: bottle, text: 'Шлем Octane', id: 2 },
+		{ img: helmet, text: 'Защита Canyon', id: 3 },
+		{ img: bottle, text: 'Шлем Octane', id: 4 },
 	],
 	dataFeaturesStreetster: [
 		{
 			img: service,
 			title: 'Простота обсуживания',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			id: 1,
 		},
 		{
 			img: construction,
 			title: 'Надежная конструкция',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			id: 2,
 		},
 		{
 			img: details,
 			title: 'Качественные детали',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			id: 3,
 		},
 	],
 	dataNews: [
@@ -39,17 +42,24 @@ export const dataMainPage = {
 			img: accessories,
 			title: 'Лучшие аксессуары для стрит байков',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+			id: 1,
 		},
 		{
 			img: trains,
 			title: 'Куда поехать в Киеве?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+			id: 2,
 		},
 		{
 			img: serv,
 			title: 'Как обслуживать свой велосипед?',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+			id: 3,
 		},
 	],
-	dataCategory: [{ img: street }, { img: road }, { img: offroad }],
+	dataCategory: [
+		{ img: street, id: 1 },
+		{ img: road, id: 2 },
+		{ img: offroad, id: 3 },
+	],
 };

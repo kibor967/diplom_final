@@ -1,12 +1,12 @@
-import { HeaderPageCategory } from './components/HeaderCategoryPage';
-import { CategoryContent } from './components/ContentPageCategory';
+import { Header } from './components/Header';
+import { Content } from './components/Content';
 import { Footer } from '../../components/generalComponents/Footer';
 
 export function CategoryPage() {
 	return (
-		<div className='wrapper_categoryPage'>
-			<HeaderPageCategory />
-			<CategoryContent />
+		<div className='wrapper_category_Page'>
+			<Header />
+			<Content />
 			<Footer />
 		</div>
 	);

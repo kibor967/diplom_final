@@ -1,7 +1,7 @@
 import styles from './styledTemplatePage.module.scss';
 import { Footer } from '../../../components/generalComponents/Footer';
 import { TopBar } from '../../../components/generalComponents/TopBar';
-import { HeaderTemplatePage } from './components/HeaderTemplatePage';
+import { Header } from './components/Header';
 import { useSelector } from 'react-redux';
 
 export function TemplatePage() {
@@ -9,14 +9,14 @@ export function TemplatePage() {
 		state => state.dataTopBar.dataSvgTopBarBlack
 	);
 	return (
-		<div className={styles.wrapper_templatePage}>
+		<div className={styles.wrapper_template_Page}>
 			<TopBar
 				className={styles.top_bar_template}
 				logo={imagesTopBarBlack.logo}
 				cart={imagesTopBarBlack.cart}
 				burger={imagesTopBarBlack.burger}
 			/>
-			<HeaderTemplatePage />
+			<Header />
 			<Footer />
 		</div>
 	);

@@ -1,30 +1,30 @@
 import logo from '../../../images/topBar_images/svgTopBarWhite_images/Logo.svg';
 import messengers from './messengers.svg';
-import './styledFooter.scss';
+import styles from './styledFooter.module.scss';
 
 export function Footer() {
 	return (
-		<div className='wrapper_footer'>
-			<div className='footer_content'>
-				<div className='logo'>
+		<div className={styles.wrapper_footer}>
+			<div className={styles.footer_content}>
+				<div className={styles.logo}>
 					<img src={logo} alt='' />
 				</div>
-				<div className='category_footer'>
+				<div className={styles.category_footer}>
 					<h3>Категории</h3>
 					<a href='#'>ROAD SERIES</a>
 					<a href='#'>STREET SERIES</a>
 					<a href='#'>MOUNTAIN SERIES</a>
 				</div>
-				<div className='information_footer'>
+				<div className={styles.information_footer}>
 					<h3>Информация</h3>
 					<a href='#'>О нас</a>
 					<a href='#'>Контакты</a>
 				</div>
-				<div className='messengers_footer'>
+				<div className={styles.messengers_footer}>
 					<img src={messengers} alt='' />
 				</div>
 			</div>
-			<h3 className='Rights'>© STREETSTER — Все права защищены </h3>
+			<h3 className={styles.rights}>© STREETSTER — Все права защищены </h3>
 		</div>
 	);
 }

@@ -1,0 +1,31 @@
+.wrapper_footer {
+	background-color: black;
+	color: white;
+	padding-bottom: 60px;
+	.footer_content {
+		display: flex;
+		justify-content: space-between;
+		padding: 55px 70px 60px 134px;
+		.category_footer,
+		.information_footer,
+		.messengers_footer {
+			padding-top: 22px;
+		}
+		h3 {
+			margin-bottom: 16px;
+			font-weight: 700;
+		}
+		a {
+			text-decoration: none;
+			display: block;
+			color: white;
+			font-weight: normal;
+			line-height: 25px;
+		}
+	}
+	h3.rights {
+		font-size: 18px;
+		text-align: center;
+		color: #484848;
+	}
+}

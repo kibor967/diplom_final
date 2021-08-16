@@ -4,7 +4,7 @@ import { Footer } from '../../components/generalComponents/Footer';
 
 export function MainPage() {
 	return (
-		<div className='wrapper_mainPage'>
+		<div className='wrapper_main_Page'>
 			<Header />
 			<Content />
 			<Footer />

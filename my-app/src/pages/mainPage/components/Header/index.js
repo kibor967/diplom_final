@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import styles from './styledHeader.module.scss';
 import { TopBar } from '../../../../components/generalComponents/TopBar';
-import { Button } from '../../../../components/generalComponents/Button/LittleButton/button';
+import { BigButton, LittleButton } from '../../../../components/generalComponents/buttons';
 
 export function Header() {
 	const imagesTopBarWhite = useSelector(
@@ -20,7 +20,7 @@ export function Header() {
 					Удобный и быстрый <br />
 					Твой идеал для покорения города
 				</h1>
-				<Button text='УЗНАТЬ БОЛЬШЕ' />
+				<LittleButton text='УЗНАТЬ БОЛЬШЕ' />
 			</div>
 		</div>
 	);
