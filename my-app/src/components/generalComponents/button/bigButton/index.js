@@ -1,9 +1,5 @@
-import styles from  './styledBigButton.module.scss';
+import styles from './styledBigButton.module.scss';
 
-export function ButtonBig (props) {
-    return (
-        <button className={styles.big_button}>{props.text}</button>
-    ) 
-  };
-  
-  
+export function ButtonBig(props) {
+	return <button className={styles.big_button}>{props.text}</button>;
+}

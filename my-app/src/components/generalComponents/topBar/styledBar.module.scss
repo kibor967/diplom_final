@@ -1,40 +1,39 @@
 .wrapper_topBar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 13px 70px;
-    position: absolute;
-    top:20px;
-    left:10px;
-    z-index: 100000000111;
-    .input_topBar{
-        position: relative;
-        input{
-            padding-left:15px;
-            width: 400px;
-            height: 30px;
-            border-radius: 15.5px;
-            border:none;
-            font-size: 17px;
-        }
-        .search_list {
-            display: none;
-            position: absolute;
-            left:14px;
-            top:32px;
-        }
-        .show_search_list {
-            display: block;
-        }
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 13px 70px;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	z-index: 100000000111;
+	.input_topBar {
+		position: relative;
+		input {
+			padding-left: 15px;
+			width: 400px;
+			height: 30px;
+			border-radius: 15.5px;
+			border: none;
+			font-size: 17px;
+		}
+		.search_list {
+			display: none;
+			position: absolute;
+			left: 14px;
+			top: 32px;
+		}
+		.show_search_list {
+			display: block;
+		}
+	}
+	.cart_burger_topBar {
+		display: flex;
+		align-items: center;
 
-    }
-    .cart_burger_topBar{
-        display: flex;
-        align-items:center;
-                
-        .cart_topBar{
-            margin-right:35px;
-        }
-    }
-};
+		.cart_topBar {
+			margin-right: 35px;
+		}
+	}
+}

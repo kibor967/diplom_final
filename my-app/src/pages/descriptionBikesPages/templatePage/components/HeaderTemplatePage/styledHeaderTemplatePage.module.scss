@@ -1,0 +1,22 @@
+.wrapper_header_templatePage {
+	display: flex;
+	color: black;
+	margin-bottom: 60px;
+	.inner_buy_bike {
+		display: flex;
+		align-items: center;
+		padding-left: 70px;
+	}
+	.slider_bike {
+		border: 1px solid red;
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		align-items: center;
+		.slider {
+			width: 100%;
+			color: black;
+		}
+	}
+}

@@ -1,15 +1,14 @@
 import { createStore, combineReducers } from 'redux';
-import { mainPageReducer } from './reduxMainPage/mainPageReducer';
-import { cotegoryPageReducer } from './reduxCotegoryPage/cotegoryPageReducer';
-import { DescriptionBikesPagesReducer } from '../redux/reduxDescriptionBikesPages/descriptionBikesPagesReducer';
-import { topBarReducer } from './reduxTopBar/topBarReducer';
+import { mainPageReducer } from './mainPage/mainPageReducer';
+import { categoryPageReducer } from './сategoryPage/categoryPageReducer';
+import { DescriptionBikesPagesReducer } from './descriptionBikesPages/descriptionBikesPagesReducer';
+import { topBarReducer } from './topBar/topBarReducer';
 
 const rootReducer = combineReducers({
-  dataMainPage:mainPageReducer,
-  dataCotegoryPage:cotegoryPageReducer,
-  dataDescriptionBikesPages:DescriptionBikesPagesReducer,
-  dataTopBar:topBarReducer,
-
-})
+	dataMainPage: mainPageReducer,
+	dataCategoryPage: categoryPageReducer,
+	dataDescriptionBikesPages: DescriptionBikesPagesReducer,
+	dataTopBar: topBarReducer,
+});
 
 export const store = createStore(rootReducer);

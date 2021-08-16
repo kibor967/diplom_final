@@ -6,15 +6,14 @@ import cartBlack from '../../images/topBar_images/svgTopBarBlack_images/Cart.svg
 import logoBlack from '../../images/topBar_images/svgTopBarBlack_images/Logo.svg';
 
 export const dataTopBar = {
-    dataSvgTopBarWhite:{
-        burger:burgerWhite,
-        cart:cartWhite,
-        logo:logoWhite
-    },
-
-    dataSvgTopBarBlack:{
-        burger:burgerBlack,
-        cart:cartBlack,
-        logo:logoBlack
-    } 
+	dataSvgTopBarWhite: {
+		burger: burgerWhite,
+		cart: cartWhite,
+		logo: logoWhite,
+	},
+	dataSvgTopBarBlack: {
+		burger: burgerBlack,
+		cart: cartBlack,
+		logo: logoBlack,
+	},
 };

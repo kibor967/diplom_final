@@ -1,22 +1,20 @@
-import { Route, Switch, Redirect,} from "react-router-dom";
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
-import { MainPage } from "../src/components/pages/mainPage";
-import { CotegoryPage } from "../src/components/pages/сotegoryPage";
-import { TemplatePage } from "../src/components/pages/descriptionBikesPages/TemplatePage/index.js";
+import { MainPage } from './pages/mainPage';
+import { CategoryPage } from './pages/categoryPage';
+import { TemplatePage } from './pages/descriptionBikesPages/templatePage';
 
 function App() {
-  return (
-    <div className = "App">
-    <Switch>
-      <Route path="/main-page" render = {() => <MainPage /> }/>
-      <Route path="/cotegory-page" render = {() => <CotegoryPage />}/>
-      <Route path="/template-page" render = {() => <TemplatePage />}/>
-      <Route path="/">
-        <Redirect to="/main-page" />
-      </Route>
-    </Switch>
-  </div>
-  );
+	return (
+		<div className='App'>
+			<Switch>
+				<Route path='/main-page' render={() => <MainPage />} />
+				<Route path='/category-page' render={() => <CategoryPage />} />
+				<Route path='/template-page' render={() => <TemplatePage />} />
+				<Redirect to='/main-page' />
+			</Switch>
+		</div>
+	);
 }
 
 export default App;
