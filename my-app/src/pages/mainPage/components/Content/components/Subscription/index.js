@@ -1,6 +1,6 @@
 import styles from './styledSubscription.module.scss';
-import { LittleButton } from '../../../../../../components/generalComponents/buttons';
-import plate from '../../../../../../images/mainPage_images/contentImages/plate.png';
+import { LittleButton } from 'components/generalComponents/buttons';
+import plate from 'images/mainPage_images/contentImages/plate.png';
 
 export function Subscription() {
 	return (

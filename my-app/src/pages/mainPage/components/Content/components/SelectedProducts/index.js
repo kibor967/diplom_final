@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import styles from './styledSelectProduct.module.scss';
-import { H2 } from '.././CommonStyles/styledH2';
-import velik from '../../../../../../images/mainPage_images/contentImages/section_selectProduct_images/bicycle.png';
+import { H2 } from '../CommonStyles/styledH2';
+import velik from 'images/mainPage_images/contentImages/section_selectProduct_images/bicycle.png';
 
 export function SelectProduct() {
 	const dataProd = useSelector(state => state.dataMainPage.dataProduct);

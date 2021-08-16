@@ -1,6 +1,6 @@
 import styles from './styledHeaderPageCategory.module.scss';
-import { TopBar } from '../../../../components/generalComponents/TopBar';
-import bicycle from '../../../../images/categoriesPage_images/headerImages/bicycle.png';
+import { TopBar } from 'components/generalComponents/TopBar';
+import bicycle from 'images/categoriesPage_images/headerImages/bicycle.png';
 import { useSelector } from 'react-redux';
 
 export function Header() {

@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import { Content } from './components/Content';
-import { Footer } from '../../components/generalComponents/Footer';
+import { Footer } from 'components/generalComponents/Footer';
 
 export function MainPage() {
 	return (

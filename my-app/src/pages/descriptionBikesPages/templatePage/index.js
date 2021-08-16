@@ -1,6 +1,6 @@
 import styles from './styledTemplatePage.module.scss';
-import { Footer } from '../../../components/generalComponents/Footer';
-import { TopBar } from '../../../components/generalComponents/TopBar';
+import { Footer } from 'components/generalComponents/Footer';
+import { TopBar } from 'components/generalComponents/TopBar';
 import { Header } from './components/Header';
 import { useSelector } from 'react-redux';
 

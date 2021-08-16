@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { BigButton } from '../../../../../components/generalComponents/buttons';
-import styles from '.././styledContentPageCategory.module.scss';
+import { BigButton } from 'components/generalComponents/buttons';
+import styles from '../styledContentPageCategory.module.scss';
 import Carousel from 'react-elastic-carousel';
 
 export function TypeBike({ title, price, text, color, img, key }) {

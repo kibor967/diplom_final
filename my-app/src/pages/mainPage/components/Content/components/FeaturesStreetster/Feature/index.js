@@ -1,4 +1,4 @@
-import styles from '.././styledFeaturesStreetster.module.scss';
+import styles from '../styledFeaturesStreetster.module.scss';
 
 export function Feature({ title, text, img }) {
 	return (
