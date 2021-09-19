@@ -1,0 +1,20 @@
+.wrapper_colors {
+	margin-bottom: 20px;
+	.erros_text {
+		color: red;
+		margin-top: 10px;
+		font-weight: lighter;
+		font-size: 18px;
+	}
+	.colors_list {
+		display: flex;
+		margin-top: 20px;
+	}
+	p {
+		font-size: 20px;
+		span {
+			font-weight: 700;
+			font-size: 18px;
+		}
+	}
+}

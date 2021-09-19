@@ -1,0 +1,59 @@
+.wrapper_topBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 13px 70px;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	.logo {
+		display: flex;
+		align-items: center;
+	}
+	.cart_burger_topBar {
+		display: flex;
+		align-items: center;
+		.burger {
+			cursor: pointer;
+		}
+		.icon_user {
+			width: 50px;
+			height: 35px;
+			margin-right: 40px;
+			color: white;
+			cursor: pointer;
+		}
+		.icon_user.iconUser_black {
+			color: black;
+		}
+		.cart_top_bar_userIcon {
+			position: relative;
+			display: flex;
+			align-items: center;
+			.userIcon_form_user {
+				display: flex;
+				align-items: center;
+			}
+			.cart {
+				margin-right: 35px;
+				cursor: pointer;
+				position: relative;
+				.colProd {
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+					background-color: black;
+					color: white;
+					position: absolute;
+					top: -20px;
+					right: -2px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}

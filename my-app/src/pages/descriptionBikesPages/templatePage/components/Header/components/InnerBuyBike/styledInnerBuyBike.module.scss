@@ -1,0 +1,25 @@
+.inner_buy_bike {
+	padding: 140px 0px 0px 40px;
+	.nameBike_price_color {
+		width: 87%;
+		.order {
+			color: black;
+			font-size: 20px;
+			font-weight: lighter;
+			width: 80%;
+		}
+		h2 {
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			line-height: 46px;
+		}
+		.price_for_bike {
+			font-size: 24px;
+			font-weight: 450px;
+			line-height: 30px;
+			display: inline-block;
+			margin-bottom: 38px;
+		}
+	}
+}

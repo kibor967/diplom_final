@@ -1,0 +1,28 @@
+.wrapper_subscription {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 227px;
+	position: relative;
+	img {
+		position: absolute;
+		left: 20px;
+		bottom: -60px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+	}
+	.input_button {
+		width: 415px;
+		margin-top: 20px;
+		text-align: center;
+		input {
+			width: 100%;
+			margin-bottom: 30px;
+			height: 40px;
+			border: 1px solid black;
+			padding-left: 20px;
+		}
+	}
+}

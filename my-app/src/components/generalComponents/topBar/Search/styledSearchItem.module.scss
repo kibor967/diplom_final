@@ -1,0 +1,18 @@
+.item_search {
+	background-color: #f2f2f2;
+	display: flex;
+	color: black;
+	padding: 5px 17px;
+	cursor: pointer;
+	border-bottom: 1px solid gray;
+	.img_search {
+		margin-right: 8px;
+	}
+	.description_search_item {
+		padding-top: 9px;
+	}
+}
+
+.item_search:hover {
+	background-color: #d5d5d5;
+}

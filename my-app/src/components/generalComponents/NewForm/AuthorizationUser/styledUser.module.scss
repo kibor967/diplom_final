@@ -1,0 +1,34 @@
+.wrapper_user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+	flex-direction: column;
+	padding: 30px 40px 30px 40px;
+	h1 {
+		font-size: 60px;
+	}
+	.icon_user {
+		width: 40%;
+		height: 40%;
+		margin-top: 40px;
+		position: relative;
+		left: 30px;
+	}
+	.buttons {
+		width: 100%;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		button {
+			background-color: white;
+			padding: 10px 20px 10px 20px;
+			border: 4px solid black;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+}

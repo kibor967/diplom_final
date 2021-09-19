@@ -1,0 +1,28 @@
+.wrapper_category {
+	color: black;
+	padding-top: 70px;
+	padding: 0px 50px;
+	h2 {
+		font-size: 64px;
+		font-weight: 700;
+		padding-bottom: 40px;
+	}
+	.wrapper_types_bikes {
+		display: flex;
+		justify-content: center;
+		height: 500px;
+		align-items: center;
+
+		.type_bike {
+			img {
+				margin-bottom: 40px;
+			}
+			a {
+				text-decoration: none;
+				font-weight: bold;
+				color: black;
+				font-size: 30px;
+			}
+		}
+	}
+}

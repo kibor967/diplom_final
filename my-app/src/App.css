@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+	font-family: 'FuturaPT', sans-serif;
+}
+
+.App {
+	max-width: 1441px;
+	margin: 0px auto;
+	position: relative;
+}
