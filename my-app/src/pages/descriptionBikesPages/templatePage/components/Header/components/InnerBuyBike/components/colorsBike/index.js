@@ -1,38 +1,37 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import styles from './styledColorsBike.module.scss';
-import { ColorBike } from './colorBike';
+import { RadioColor } from './RadioColor';
 
-export function ColorsBike({ colors }) {
+export function ColorsBike({ colors, funkColor, errors }) {
 	const [selectColor, setSelectColor] = useState('');
 
-	const colorHandler = e => {
-		if (e.target.id == 0) {
-			setSelectColor('Красный');
-		} else if (e.target.id == 1) {
-			setSelectColor('Черный');
-		} else if (e.target.id == 2) {
-			setSelectColor('Голубой');
-		}
-	};
-
-	const colorsBike = colors.map((item, index) => {
-		return (
-			<ColorBike
-				style={item.style}
-				color={item.color}
-				index={index}
-				colorHandler={colorHandler}
-			/>
-		);
-	});
+	const changeColorHandler = useCallback(changeColor => {
+		setSelectColor(changeColor);
+		funkColor(changeColor);
+	}, []);
 
 	return (
-		<div className={styles.color_bike}>
+		<div className={styles.wrapper_colors}>
 			<p>
-				<span>Цвет: </span>
+				<span>Цвет:</span>
 				{selectColor}
 			</p>
-			<ul>{colorsBike}</ul>
+			<p className={styles.erros_text}>
+				{errors && 'Вам необходимо выбрать цвет'}{' '}
+			</p>
+			<div className={styles.colors_list}>
+				{colors.map(item => {
+					return (
+						<RadioColor
+							color={item.color}
+							changeColor={changeColorHandler}
+							colorStyle={item.styleColor}
+							checkedColor={item.checked}
+							key={item.id}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 }

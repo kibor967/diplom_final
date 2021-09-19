@@ -1,5 +1,5 @@
 import styles from '../styledNews.module.scss';
-import { BigButton } from 'components/generalComponents/buttons';
+import { BigButton } from 'components/generalComponents/Buttons';
 
 export function Article({ img, title, text, id }) {
 	return (

@@ -1,0 +1,25 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	align-items: center;
+	.form_input_btn {
+		margin-top: 30px;
+		width: 50%;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+	.errorsFind {
+		color: red;
+		margin-top: 10px;
+		font-weight: lighter;
+		font-size: 18px;
+	}
+	.form_input_login {
+		margin-top: 40px;
+		font-size: 20px;
+		a {
+			margin-left: 10px;
+		}
+	}
+}

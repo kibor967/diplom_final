@@ -1,20 +1,18 @@
 import styles from './styledContent.module.scss';
 import { Category } from './components/Category';
-import { SelectProduct } from './components//SelectedProducts';
-import { CompanyDescription } from './components/CompanyDescription';
 import { FeaturesStreetster } from './components/FeaturesStreetster';
 import { News } from 'pages/mainPage/components/Content/components/News';
-import { Subscription } from 'pages/mainPage/components/Content/components/Subscription';
+import { dataMainPage } from 'dataPages/dataMainPage/data';
+import { CompanyDescription } from './components/CompanyDescription';
 
 export function Content() {
+	const { dataFeatures, dataNews, dataCategory } = dataMainPage;
 	return (
 		<div className={styles.wrapper_content}>
-			<Category />
-			<SelectProduct />
+			<Category dataCategory={dataCategory} />
 			<CompanyDescription />
-			<FeaturesStreetster />
-			<News />
-			<Subscription />
+			<FeaturesStreetster dataFeatures={dataFeatures} />
+			<News dataNews={dataNews} />
 		</div>
 	);
 }

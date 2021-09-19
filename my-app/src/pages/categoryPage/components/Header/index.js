@@ -1,12 +1,10 @@
 import styles from './styledHeaderPageCategory.module.scss';
 import { TopBar } from 'components/generalComponents/TopBar';
 import bicycle from 'images/categoriesPage_images/headerImages/bicycle.png';
-import { useSelector } from 'react-redux';
+import { dataTopBar } from 'dataPages/dataTopBar/dataTopBar';
 
 export function Header() {
-	const imagesTopBarWhite = useSelector(
-		state => state.dataTopBar.dataSvgTopBarWhite
-	);
+	const imagesTopBarWhite = dataTopBar.dataSvgTopBarWhite;
 	return (
 		<div className={styles.wrapper_header}>
 			<TopBar

@@ -1,0 +1,24 @@
+@mixin font_styles($height, $weight_size_value, $style, $size_value) {
+	line-height: $height;
+	font: {
+		weight: $weight_size_value;
+		style: $style;
+		size: $size_value;
+	}
+}
+
+@mixin styled_all_h1 {
+	@include font_styles(60px, 700, normal, 64px);
+}
+
+@mixin styled_all_h2 {
+	@include font_styles(47px, 700, normal, 36px);
+}
+
+@mixin styled_all_h3 {
+	@include font_styles(30px, 700, normal, 24px);
+}
+
+@mixin styled_all_p {
+	@include font_styles(30px, 400, normal, 18px);
+}

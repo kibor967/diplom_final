@@ -1,0 +1,20 @@
+.size_rama {
+	margin-top: 20px;
+	.errors_size {
+		color: red;
+		margin-top: 10px;
+		font-weight: lighter;
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: 450;
+		.bold_text {
+			font-weight: 700;
+		}
+	}
+}
+.wrapper_sizes {
+	margin-top: 20px;
+	display: flex;
+}

@@ -1,8 +1,6 @@
-import BAKERSTREET from '../../images/descriptionBikesPages_images/headerImages/BAKERSTREET.png';
-import BROADWAY from '../../images/descriptionBikesPages_images/headerImages/BROADWAY.png';
-import NATHAN from '../../images/descriptionBikesPages_images/headerImages/NATHAN.png';
-import helmet from '../../images/descriptionBikesPages_images/headerImages/helmet.png';
-import bottle from '../../images/descriptionBikesPages_images/headerImages/botale.png';
+import BAKERSTREET from 'images/descriptionBikesPages_images/headerImages/BAKERSTREET.png';
+import BROADWAY from 'images/descriptionBikesPages_images/headerImages/BROADWAY.png';
+import NATHAN from 'images/descriptionBikesPages_images/headerImages/NATHAN.png';
 
 export const dataDescriptionBikesPages = {
 	dataHeader: {
@@ -10,31 +8,56 @@ export const dataDescriptionBikesPages = {
 			dataSlider: [BAKERSTREET, BROADWAY, NATHAN],
 			dataDescriptionBikes: {
 				title: 'STREETSTER BAKERSTREET',
-				price: '13000 ₴',
+				price: '13000',
 			},
 			dataInnerBuyBike: {
 				colors: [
-					{ style: 'color_red', color: 'red' },
-					{ style: 'color_black', color: 'black' },
-					{ style: 'color_blue', color: 'blue' },
+					{ color: 'Красный', styleColor: 'red', id: 1 },
+					{ color: 'Черный', styleColor: 'black', id: 2 },
+					{ color: 'Голубой', styleColor: 'blue', id: 3 },
 				],
-				selectColor: ['Красный', 'Черный', 'Голубой'],
+				size: [
+					{
+						rama: '54” (Рост 175-185 см)',
+						numberSize: '54”',
+						id: 1,
+					},
+					{ rama: '57” (Рост 180-195 см)', numberSize: '57”', id: 2 },
+				],
 			},
 		},
 		dataBroadway: {
-			dataSlider: [{ BAKERSTREET }, { BROADWAY }, { NATHAN }],
-			dataDescriptionBikes: [
-				{ title: 'STREETSTER BROADWAY', price: '11000 ₴' },
-			],
+			dataSlider: [BROADWAY, BAKERSTREET, NATHAN],
+			dataDescriptionBikes: { title: 'STREETSTER BROADWAY', price: '11000 ' },
+			dataInnerBuyBike: {
+				colors: [
+					{ color: 'Красный', styleColor: 'red', id: 1 },
+					{ color: 'Черный', styleColor: 'black', id: 2 },
+				],
+				size: [
+					{
+						rama: '54” (Рост 175-185 см)',
+						numberSize: '54”',
+						id: 1,
+					},
+					{ rama: '57” (Рост 180-195 см)', numberSize: '57”', id: 2 },
+				],
+			},
 		},
 		dataNathan: {
-			dataSlider: [{ BAKERSTREET }, { BROADWAY }, { NATHAN }],
-			dataDescriptionBikes: [{ title: 'STREETSTER NATHAN', price: '12000 ₴' }],
+			dataSlider: [NATHAN, BAKERSTREET, BROADWAY],
+			dataDescriptionBikes: { title: 'STREETSTER NATHAN', price: '12000' },
+			dataInnerBuyBike: {
+				colors: [{ color: 'Красный', styleColor: 'red', id: 1 }],
+				size: [
+					{
+						rama: '54” (Рост 175-185 см)',
+						numberSize: '54”',
+						id: 1,
+					},
+					{ rama: '57” (Рост 180-195 см)', numberSize: '57”', id: 2 },
+				],
+			},
 		},
-
-		dataAdditionalAccessories: [
-			{ img: helmet, title: 'Шлем Octane', price: '200 ₴' },
-			{ img: bottle, title: 'Защита Canyon', price: '50 ₴' },
-		],
 	},
 };

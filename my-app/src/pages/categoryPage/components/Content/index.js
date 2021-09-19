@@ -1,22 +1,29 @@
-import { useSelector } from 'react-redux';
+import { React } from 'react';
+import PropTypes from 'prop-types';
 import styles from './styledContentPageCategory.module.scss';
 import { TypeBike } from './TypeBike';
+import { v4 } from 'uuid';
 
-export function Content() {
-	const dataCategory = useSelector(
-		state => state.dataCategoryPage.dataTypeBike
+export function Content({ data }) {
+	return (
+		<div className={styles.wrapper_category}>
+			{data.map(item => {
+				return (
+					<TypeBike
+						title={item.title}
+						price={item.price}
+						img={item.img}
+						key={v4()}
+						text={item.text}
+						id={item.id}
+						linkPage={item.linkPage}
+					/>
+				);
+			})}
+		</div>
 	);
-	const typeBikeList = dataCategory.map((item, index) => {
-		return (
-			<TypeBike
-				title={item.title}
-				price={item.price}
-				img={item.img}
-				key={index}
-				text={item.text}
-				img={item.img}
-			/>
-		);
-	});
-	return <div className={styles.wrapper_category}>{typeBikeList}</div>;
 }
+
+Content.propTypes = {
+	data: PropTypes.array,
+};

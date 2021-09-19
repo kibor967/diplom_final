@@ -1,7 +1,21 @@
-import { dataDescriptionBikesPages } from '../../dataPages/dataDescriptionBikesPages/dataDescriptionBikesPages';
+import { handleActions } from 'redux-actions';
 
-const initialState = dataDescriptionBikesPages.dataHeader;
+import {
+	IncreasePrice,
+	ReducePrice,
+	PriceBike,
+} from './descriptionBikesPagesActions';
 
-export const DescriptionBikesPagesReducer = (state = initialState, action) => {
-	return state;
-};
+export const initialState = 0;
+
+export const priceReducers = handleActions(
+	{
+		[PriceBike]: (state, action) => action.payload,
+		[IncreasePrice]: (state, action) => {
+			const array = [];
+			array.push(action.payload);
+		},
+		[ReducePrice]: (state, action) => state - action.payload,
+	},
+	initialState
+);

@@ -1,0 +1,31 @@
+.wrapper {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
+	z-index: 30;
+	.close_modal {
+		color: black;
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		cursor: pointer;
+	}
+	.wrapper_form {
+		background: white;
+		color: black;
+		width: 50%;
+		height: 700px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+}

@@ -1,23 +1,15 @@
-import helmet from '../../images/mainPage_images/contentImages/section_selectProduct_images/helmet.png';
-import bottle from '../../images/mainPage_images/contentImages/section_selectProduct_images/botale.png';
-import service from '../../images/mainPage_images/contentImages/section_features_images/service.png';
-import construction from '../../images/mainPage_images/contentImages/section_features_images/construction.png';
-import details from '../../images/mainPage_images/contentImages/section_features_images/details.png';
-import accessories from '../../images/mainPage_images/contentImages/section_news_images/accessories.png';
-import trains from '../../images/mainPage_images/contentImages/section_news_images/trains.png';
-import serv from '../../images/mainPage_images/contentImages/section_news_images/service.png';
-import street from '../../images/mainPage_images/contentImages/section_category_images/Group_3.png';
-import road from '../../images/mainPage_images/contentImages/section_category_images/Group_2.png';
-import offroad from '../../images/mainPage_images/contentImages/section_category_images/Group.png';
+import service from 'images/mainPage_images/contentImages/section_features_images/service.png';
+import construction from 'images/mainPage_images/contentImages/section_features_images/construction.png';
+import details from 'images/mainPage_images/contentImages/section_features_images/details.png';
+import accessories from 'images/mainPage_images/contentImages/section_news_images/accessories.png';
+import trains from 'images/mainPage_images/contentImages/section_news_images/trains.png';
+import serv from 'images/mainPage_images/contentImages/section_news_images/service.png';
+import street from 'images/mainPage_images/contentImages/section_category_images/typeThree.png';
+import road from 'images/mainPage_images/contentImages/section_category_images/typeSecond.png';
+import offroad from 'images/mainPage_images/contentImages/section_category_images/typeOne.png';
 
 export const dataMainPage = {
-	dataProduct: [
-		{ img: helmet, text: 'Защита Canyon', id: 1 },
-		{ img: bottle, text: 'Шлем Octane', id: 2 },
-		{ img: helmet, text: 'Защита Canyon', id: 3 },
-		{ img: bottle, text: 'Шлем Octane', id: 4 },
-	],
-	dataFeaturesStreetster: [
+	dataFeatures: [
 		{
 			img: service,
 			title: 'Простота обсуживания',
@@ -58,8 +50,8 @@ export const dataMainPage = {
 		},
 	],
 	dataCategory: [
-		{ img: street, id: 1 },
-		{ img: road, id: 2 },
-		{ img: offroad, id: 3 },
+		{ img: street, id: 1, name: 'STREET SERIES' },
+		{ img: road, id: 2, name: 'ROAD SERIES' },
+		{ img: offroad, id: 3, name: 'OFFROAD SERIES' },
 	],
 };

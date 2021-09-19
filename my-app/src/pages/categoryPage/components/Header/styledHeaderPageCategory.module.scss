@@ -1,3 +1,5 @@
+@import '../../../../styles/styles.scss';
+
 .wrapper_header {
 	background: url(../../../../images/categoriesPage_images/headerImages/headerImg.jpg);
 	color: white;
@@ -16,8 +18,7 @@
 				margin-bottom: 40px;
 			}
 			p {
-				font-size: 18px;
-				line-height: 24px;
+				@include styled_all_p;
 			}
 		}
 	}

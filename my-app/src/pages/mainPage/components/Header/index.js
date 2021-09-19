@@ -1,12 +1,9 @@
-import { useSelector } from 'react-redux';
 import styles from './styledHeader.module.scss';
-import { TopBar } from '../../../../components/generalComponents/TopBar';
-import { BigButton, LittleButton } from '../../../../components/generalComponents/buttons';
+import { TopBar } from 'components/generalComponents/TopBar';
+import { dataTopBar } from 'dataPages/dataTopBar/dataTopBar';
 
 export function Header() {
-	const imagesTopBarWhite = useSelector(
-		state => state.dataTopBar.dataSvgTopBarWhite
-	);
+	const imagesTopBarWhite = dataTopBar.dataSvgTopBarWhite;
 	return (
 		<div className={styles.wrapper_header}>
 			<TopBar
@@ -15,12 +12,11 @@ export function Header() {
 				burger={imagesTopBarWhite.burger}
 			/>
 			<div className={styles.content_header}>
-				<h2>STREETSTER NATHAN</h2>
+				<p>STREETSTER NATHAN</p>
 				<h1>
 					Удобный и быстрый <br />
 					Твой идеал для покорения города
 				</h1>
-				<LittleButton text='УЗНАТЬ БОЛЬШЕ' />
 			</div>
 		</div>
 	);

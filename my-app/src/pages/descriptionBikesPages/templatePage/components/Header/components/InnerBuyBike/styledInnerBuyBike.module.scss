@@ -1,7 +1,13 @@
 .inner_buy_bike {
-	padding-top: 179px;
-	padding-left: 71px;
+	padding: 140px 0px 0px 40px;
 	.nameBike_price_color {
+		width: 87%;
+		.order {
+			color: black;
+			font-size: 20px;
+			font-weight: lighter;
+			width: 80%;
+		}
 		h2 {
 			font-size: 36px;
 			font-weight: 700;

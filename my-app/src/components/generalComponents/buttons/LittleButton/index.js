@@ -1,5 +1,5 @@
-import styles from './button.module.scss';
+import styles from './styledLittleButton.module.scss';
 
 export function LittleButton({ text }) {
-	return <button>{text}</button>;
+	return <button className={styles.button_little}>{text}</button>;
 }

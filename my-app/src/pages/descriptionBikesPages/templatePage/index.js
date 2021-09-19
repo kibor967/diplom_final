@@ -2,12 +2,11 @@ import styles from './styledTemplatePage.module.scss';
 import { Footer } from 'components/generalComponents/Footer';
 import { TopBar } from 'components/generalComponents/TopBar';
 import { Header } from './components/Header';
-import { useSelector } from 'react-redux';
+import { dataDescriptionBikesPages } from 'dataPages/dataDescriptionBikesPages/dataDescriptionBikesPages';
+import { dataTopBar } from 'dataPages/dataTopBar/dataTopBar';
 
-export function TemplatePage() {
-	const imagesTopBarBlack = useSelector(
-		state => state.dataTopBar.dataSvgTopBarBlack
-	);
+export function TemplatePage({ dataTypeBike }) {
+	const imagesTopBarBlack = dataTopBar.dataSvgTopBarBlack;
 	return (
 		<div className={styles.wrapper_template_Page}>
 			<TopBar
@@ -15,8 +14,9 @@ export function TemplatePage() {
 				logo={imagesTopBarBlack.logo}
 				cart={imagesTopBarBlack.cart}
 				burger={imagesTopBarBlack.burger}
+				iconUserBlack='iconUser_black'
 			/>
-			<Header />
+			<Header dataHeader={dataDescriptionBikesPages.dataHeader[dataTypeBike]} />
 			<Footer />
 		</div>
 	);

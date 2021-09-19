@@ -1,39 +1,20 @@
-.color_bike {
+.wrapper_colors {
 	margin-bottom: 20px;
+	.erros_text {
+		color: red;
+		margin-top: 10px;
+		font-weight: lighter;
+		font-size: 18px;
+	}
+	.colors_list {
+		display: flex;
+		margin-top: 20px;
+	}
 	p {
+		font-size: 20px;
 		span {
 			font-weight: 700;
-		}
-	}
-	ul {
-		margin-top: 15px;
-		width: 30%;
-		display: flex;
-		.color_red,
-		.color_blue,
-		.color_black {
-			padding: 5px;
-			background: #f2f2f2;
-			border-radius: 50%;
-			cursor: pointer;
-			border: 1px solid #dbdbdb;
-			margin-right: 10px;
-			.red,
-			.blue,
-			.black {
-				width: 16px;
-				height: 16px;
-				border-radius: 50%;
-			}
-			.red {
-				background: #ff5a5a;
-			}
-			.black {
-				background: black;
-			}
-			.blue {
-				background-color: #5a88ff;
-			}
+			font-size: 18px;
 		}
 	}
 }

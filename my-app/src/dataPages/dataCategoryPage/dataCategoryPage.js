@@ -1,6 +1,6 @@
-import BAKERSTREET from '../../images/categoriesPage_images/contentImages/BAKERSTREET.png';
-import BROADWAY from '../../images/categoriesPage_images/contentImages/BROADWAY.png';
-import NATHAN from '../../images/categoriesPage_images/contentImages/NATHAN.png';
+import BAKERSTREET from 'images/categoriesPage_images/contentImages/BAKERSTREET.png';
+import BROADWAY from 'images/categoriesPage_images/contentImages/BROADWAY.png';
+import NATHAN from 'images/categoriesPage_images/contentImages/NATHAN.png';
 
 export const dataCategoryPage = {
 	dataTypeBike: [
@@ -9,18 +9,24 @@ export const dataCategoryPage = {
 			title: 'STREETSTER BAKERSTREET',
 			price: '12000 ₴',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			id: 1,
+			linkPage: 'bakerstreetPage',
 		},
 		{
-			img: [BAKERSTREET, BROADWAY, NATHAN],
+			img: [BROADWAY, BAKERSTREET, NATHAN],
 			title: 'STREETSTER BROADWAY',
 			price: '12000 ₴',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			id: 2,
+			linkPage: 'broadwayPage',
 		},
 		{
-			img: [BAKERSTREET, BROADWAY, NATHAN],
+			img: [NATHAN, BAKERSTREET, BROADWAY],
 			title: 'STREETSTER NATHAN',
 			price: '12000 ₴',
 			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			id: 3,
+			linkPage: 'nathanPage',
 		},
 	],
 };

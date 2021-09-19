@@ -1,55 +1,19 @@
 import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
-import { FiArrowLeftCircle, FiArrowRightCircle } from 'react-icons/fi';
 import styles from './styledCategory.module.scss';
-import { H2 } from '../CommonStyles/styledH2';
+import { dataMainPage } from 'dataPages/dataMainPage/data';
 
 export function Category() {
-	const dataCategoryImage = useSelector(
-		state => state.dataMainPage.dataCategory
-	);
-	const [counter, setCounter] = useState(0);
-	const length = dataCategoryImage.length;
-
-	const arrowLeftHandlerClick = () => {
-		setCounter(counter === 0 ? length - 1 : counter - 1);
-	};
-	const arrowRightHandlerClick = () => {
-		setCounter(counter === length - 1 ? 0 : counter + 1);
-	};
-	if (!Array.isArray(dataCategoryImage) || dataCategoryImage.length <= 0) {
-		return null;
-	}
 	return (
 		<div className={styles.wrapper_category}>
-			<FiArrowLeftCircle
-				className={styles.arrow_left}
-				onClick={arrowLeftHandlerClick}
-			/>
-			<FiArrowRightCircle
-				className={styles.arrow_right}
-				onClick={arrowRightHandlerClick}
-			/>
-			<NavLink to='/category-page' activeClassName={styles.selected_Nav}>
-				<H2>Категории</H2>
-			</NavLink>
-			<div className={styles.slider_category}>
-				{dataCategoryImage.map((item, index) => {
+			<h2>Категории</h2>
+			<div className={styles.wrapper_types_bikes}>
+				{dataMainPage.dataCategory.map(item => {
 					return (
-						<div
-							className={
-								index === counter ? `${styles.slide_active}` : `${styles.slide}`
-							}
-							key={item.id}
-						>
-							{index === counter && (
-								<img
-									src={item.img}
-									alt='travel image'
-									className={styles.image}
-								/>
-							)}
+						<div className={styles.type_bike} key={item.id}>
+							<img src={item.img} alt='' />
+							<NavLink to='/category-page'>
+								<p>{item.name}</p>
+							</NavLink>
 						</div>
 					);
 				})}
@@ -57,3 +21,50 @@ export function Category() {
 		</div>
 	);
 }
+
+// const [counter, setCounter] = useState(0);
+// const length = dataCategory.length;
+
+// const arrowLeftHandlerClick = () => {
+// 	setCounter(counter === 0 ? length - 1 : counter - 1);
+// };
+// const arrowRightHandlerClick = () => {
+// 	setCounter(counter === length - 1 ? 0 : counter + 1);
+// };
+// if (!Array.isArray(dataCategory) || dataCategory.length <= 0) {
+// 	return null;
+// }
+
+// <FiArrowLeftCircle
+// 				className={styles.arrow_left}
+// 				onClick={arrowLeftHandlerClick}
+// 			/>
+// 			<FiArrowRightCircle
+// 				className={styles.arrow_right}
+// 				onClick={arrowRightHandlerClick}
+// 			/>
+// 			<NavLink to='/category-page' activeClassName={styles.selected_Nav}>
+// 				<a href='#topBar'>
+// 					<H2>Категории</H2>
+// 				</a>
+// 			</NavLink>
+// 			<div className={styles.slider_category}>
+// 				{dataCategory.map((item, index) => {
+// 					return (
+// 						<div
+// 							className={
+// 								index === counter ? `${styles.slide_active}` : `${styles.slide}`
+// 							}
+// 							key={item.id}
+// 						>
+// 							{index === counter && (
+// 								<img
+// 									src={item.img}
+// 									alt='travel image'
+// 									className={styles.image}
+// 								/>
+// 							)}
+// 						</div>
+// 					);
+// 				})}
+// 			</div>
